@@ -151,3 +151,8 @@ progress{
 .contact textarea{
     display: block;
 }
+
+footer{
+    text-align: center; background-color: black;
+    color: white;
+}
