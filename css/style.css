@@ -11,8 +11,9 @@
 }
 
 .logo img {
-    height: inherit;
-    width: inherit;
+    height: auto;
+    width: 127%;
+    margin-top: -8px;
 }
 
 nav {
@@ -51,15 +52,15 @@ ul a:hover {
 
 .home {
     width: 100%;
-    height: 663px;
+    height: auto;
     background-image: url("./images/20190208_145845\ \(2\).jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.carde{
+.carde {
     width: 80%;
-    height: 600px;
+    height: auto;
     padding-top: 30px;
     margin: auto;
     margin-top: 30px;
@@ -68,24 +69,26 @@ ul a:hover {
     align-items: center;
     background-color: rgba(12, 12, 12, 0.337);
     border: 5px solid rgba(56, 162, 162, 0.63);
+    /*border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(/images/pattern.png) 30 round;*/
     border-radius: 20px;
     color: white;
     z-index: 12;
 }
 
-.carde:hover{
+.carde:hover {
     background-color: white;
     color: black;
-
 }
 
-.image{
+.image {
     position: relative;
     width: 370px;
-    height: 100%;
+    height: 500px;
 }
 
-.image img{
+.image img {
     position: absolute;
     left: 0;
     top: -45px;
@@ -93,66 +96,331 @@ ul a:hover {
     height: auto;
 }
 
-.content{
+.content {
     width: 40%;
     height: 100%;
 }
 
-.content *{
+.content * {
     margin-bottom: 20px;
 }
 
-.label{
+.label {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.label p{
+.label p {
     margin-left: 10px;
 }
 
 
 /*    about     */
 
-.about{
-    margin: 100px;
+.about {
     width: 100%;
     height: auto;
-    
+    padding-top: 50px;
 }
 
-.about h1{
-    margin: 50px;
-    text-align: center;
+.abuot-title {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
-.skills{
+.abuot-title p {
+    background-color: #b242f9;
+    padding: 0 10px 0 10px;
+    border-radius: 50px 50px 0 0;
+    width: fit-content;
+    font-size: 50px;
+}
+
+
+
+.about-border {
+    border-top: #b242f9 1px solid;
+    border-right: #b242f9 1px solid;
+    border-bottom: #b242f9 1px solid;
+    border-radius: 0 50px 50px 0;
+
+}
+
+.sup-title {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    width: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.sup-title h1 {
+    width: fit-content;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(14, 233, 233), rgb(242, 0, 255));
+    transition: width 3s linear;
+}
+
+
+.about h2 {
+    margin-left: 50px;
+    padding-bottom: 5px;
+    border-bottom: rgb(242, 0, 255) 3px dashed;
+    width: fit-content;
+}
+
+.skills {
     width: 70%;
     margin: auto;
     margin-top: 20px;
 
 }
 
-progress{
+.sub-skil {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+progress {
     width: 100%;
+    background-color: aqua;
+    color: aqua;
+
 
 }
 
-.contact h1{
+.maxx-prog {
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    border: rgb(14, 233, 233);
+    border: rgb(142 102 245) 1px solid;
+    padding: 2px;
+}
+
+.max-prog {
+    border-radius: 50px;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    height: 100%;
+}
+
+.val-prog {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(14, 233, 233);
+    background: linear-gradient(to right, rgb(14, 233, 233), rgb(242, 0, 255));
+    border-radius: 50px;
+}
+
+
+.v-1 {
+    width: 10%;
+}
+
+.v-2 {
+    width: 20%;
+}
+
+.v-3 {
+    width: 30%;
+}
+
+.v-4 {
+    width: 40%;
+}
+
+.v-5 {
+    width: 50%;
+}
+
+.v-6 {
+    width: 60%;
+}
+
+.v-7 {
+    width: 70%;
+}
+
+.v-8 {
+    width: 80%;
+}
+
+.v-9 {
+    width: 90%;
+}
+
+.v-10 {
+    width: 100%;
+}
+
+
+.sub-skil-person {
+    display: flex;
+}
+
+.rit {
+    width: 50%;
+}
+
+.lef {
+    width: 50%;
+}
+
+.skills-person {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.max-dot {
+    margin-right: 10px;
+    width: 7px;
+    height: 10px;
+    border-radius: 50px;
+    border: rgb(14, 233, 233);
+    border: rgb(142 102 245) 1px solid;
+    padding: 2px;
+}
+
+.col-dot {
+    height: 100%;
+    background-color: rgb(14, 233, 233);
+    background: linear-gradient(to right, rgb(14, 233, 233), rgb(242, 0, 255));
+    border-radius: 50px;
+}
+
+.up-prog{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.date{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+.date h3{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+}
+
+.event{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.event h3{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.val-up-lin{
+    margin: 0 20px;
+    width: 5px;
+    height: 400px;
+    background-color: rgb(186 78 255 / 42%);;
+    /* background: linear-gradient(to right, rgb(14, 233, 233), rgb(242, 0, 255)); */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+.dot{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 5px rgb(186 78 255 / 42%);;
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+    margin: 15px 0;
+}
+.contact {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.contact-title {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.contact-title p {
+    background-color: #42f979;
+    padding: 0 10px 0 10px;
+    border-radius: 50px 50px 0 0;
+    width: fit-content;
+    font-size: 50px;
+}
+
+
+
+.contact-border {
+    border-top: #42f979 1px solid;
+    border-right: #42f979 1px solid;
+    border-bottom: #42f979 1px solid;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.rit-c{
+    width: auto;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.lef-c{
+    margin: 15px 0;
+    width: auto;
+}
+/* .contact h1 {
     text-align: center;
     margin: 50px;
+} */
+
+.contact input {
+    margin: 10px 15px;
+    border: #eee 1px solid;
+    padding: 7px;
+    width: 300px;
 }
 
-.contact input{
-    display: block;
+.contact textarea {
+    margin: 10px 15px;
+    border: #eee 1px solid;
+    padding: 7px;
+    width: 300px;
+    height: 130px;
+    resize: none;
 }
 
-.contact textarea{
-    display: block;
-}
-
-footer{
-    text-align: center; background-color: black;
+footer {
+    text-align: center;
+    background-color: black;
     color: white;
 }
