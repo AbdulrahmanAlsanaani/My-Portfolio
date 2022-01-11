@@ -4,8 +4,8 @@
     font-family: cursive;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 .logo {
@@ -20,7 +20,7 @@ html{
     margin-top: -8px;
 }
 
-.stecy{
+.stecy {
     position: fixed;
     top: 40%;
     right: 3px;
@@ -34,10 +34,12 @@ html{
     justify-content: space-evenly;
 }
 
-.home-hov-s{
-    width: 100%;
-    height: 100%;
+.home-hov-s, .about-hov-s , .services-hov-s , .contact-hov-s {
     
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+
 }
 
 .dot-stc {
@@ -45,7 +47,7 @@ html{
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    margin: 0 auto;
+    
 }
 
 nav {
@@ -59,7 +61,7 @@ nav {
     z-index: 500;
 }
 
-.menu{
+.menu {
     display: block;
     position: absolute;
     top: 10px;
@@ -67,9 +69,11 @@ nav {
     color: white;
     font-size: 30px;
 }
-nav ul{
+
+nav ul {
     display: none;
 }
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -149,7 +153,7 @@ ul a {
 
 .image img {
 
-    width: 100%;
+    width: 70%;
     height: auto;
     z-index: 5;
 }
@@ -160,12 +164,12 @@ ul a {
     height: 100%;
 }
 
-.content > p {
+.content>p {
     margin: 20px 0;
     font-size: 12px;
 }
 
-.content > h1 {
+.content>h1 {
     margin: 20px 0;
 }
 
@@ -186,7 +190,7 @@ ul a {
 .about {
     width: 100%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 80px;
     background-color: #000;
 }
 
@@ -434,7 +438,7 @@ progress {
 .services {
     width: 100%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 80px;
     background-color: #000;
 }
 
@@ -464,7 +468,7 @@ progress {
 
 }
 
-.s-row{
+.s-row {
     width: 80%;
     height: auto;
     margin: auto;
@@ -474,7 +478,7 @@ progress {
     justify-content: space-around;
 }
 
-.s-col{
+.s-col {
     margin-top: 30px;
     width: 100%;
     height: 100%;
@@ -482,22 +486,84 @@ progress {
     text-align: center;
 }
 
-.s-col h4{
+.s-col h4 {
     margin: 0 30px;
 }
 
-.s-col img{
+.s-col img {
     width: 80%;
     height: auto;
     border: #e91e63 3px solid;
     border-radius: 5px;
 }
 
+.s-col p{
+    text-align: left;
+}
+
+.s-col div {
+    width: 80%;
+    height: auto;
+    border: #e91e63 3px solid;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.s-col h3 {
+    margin-bottom: 10px;
+    width: fit-content;
+    border-bottom: #e91e63 3px dashed;
+
+}
+
+.work-secol p {
+text-align: left;
+}
+
+.work-sec, .services-sec {
+    width: 100%;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+
+}
+
+.services-sec {
+    margin-top: 20px;
+}
+
+.services-sec+div {
+    width: 200px;
+    height: 10px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: -3px;
+    transform: rotate(357deg);
+    background-color: #e91e63;
+}
+
+.work-sec+div {
+    width: 170px;
+    height: 10px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: -3px;
+    transform: rotate(357deg);
+    background-color: #e91e63;
+}
+
+.work-sec h1, .services-sec h1 {
+    width: fit-content;
+    background: #ff1f1f00;
+    /* border: 1px solid #ffeb3b; */
+    /* box-shadow: #ffeb3b 5px 5px 0 0px; */
+    padding: 0 7px;
+}
 
 .contact {
     width: 100%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 80px;
     background-color: #000;
 }
 
@@ -556,18 +622,20 @@ progress {
 
 .rit-c input {
     margin: 15px auto;
-    border: #eee 1px solid;
-    padding: 7px;
+    border: #42f979 1px solid;
+    background-color: #111;
+    padding: 7px 0;
     width: 100%;
 }
 
 .contact textarea {
     margin: 0 auto;
-    border: #eee 1px solid;
     padding: 7px;
     width: 100%;
     height: 130px;
     resize: none;
+    border: #42f979 1px solid;
+    background-color: #111;
 }
 
 
@@ -585,25 +653,37 @@ progress {
 .btn {
     width: 100%;
     height: 30px;
-    background-color: rgb(186 78 255 / 42%);
-    background: linear-gradient(to right, #c8fdd8, #42f979);
+    background-color: #42f979;
     border: black 1px solid;
     border-radius: 5px;
     margin: 0 auto;
 
 }
 
-.btn:hover{
-    animation-name: btn;
-    animation-duration: 4s;
+@keyframes btn {
+    0% {
+        background-color: linear-gradient(to right, #fde2c8, #42f979);
+    }
+
+    25% {
+        background-color: linear-gradient(to right, #c8fdd8, #42f979);
+    }
+
+    50% {
+        background-color: linear-gradient(to right, #c8fdd8, #ea42f9);
+    }
+
+    100% {
+        background-color: linear-gradient(to right, #ff0059, #42f979);
+    }
 }
 
-@keyframes btn {
-    0%   {background-color: linear-gradient(to right, #fde2c8, #42f979);}
-    25%  {background-color: linear-gradient(to right, #c8fdd8, #42f979);}
-    50%  {background-color: linear-gradient(to right, #c8fdd8, #ea42f9);}
-    100% {background-color: linear-gradient(to right, #ff0059, #42f979);}
+.btn:hover {
+    background: linear-gradient(to right, #114922, #42f979, #114922 );
+
 }
+
+
 
 .social {
     width: 70%;
@@ -612,7 +692,7 @@ progress {
     justify-content: center;
 }
 
-.social ul{
+.social ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -653,13 +733,13 @@ footer {
     padding: 50px 0 20px 0;
 }
 
-footer img{
+footer img {
     height: 50px;
-    width:  50px;
+    width: 50px;
 }
 
 @media only screen and (min-width:500px) {
-    .s-row{
+    .s-row {
         width: 80%;
         height: auto;
         margin: auto;
@@ -668,8 +748,8 @@ footer img{
         flex-direction: column;
         justify-content: space-around;
     }
-    
-    .s-col{
+
+    .s-col {
         margin-top: 30px;
         width: 100%;
         height: 100%;
@@ -679,11 +759,11 @@ footer img{
         justify-content: center;
     }
 
-    .s-col img{
+    .s-col img {
         width: 60%;
     }
 
-    .s-col h4{
+    .s-col h4 {
         width: 40%;
     }
 
@@ -694,11 +774,11 @@ footer img{
         display: flex;
         flex-direction: row;
     }
-    
+
     .rit {
         width: 50%;
     }
-    
+
     .lef {
         width: 50%;
     }
@@ -707,28 +787,31 @@ footer img{
         flex-direction: row;
 
     }
+
     .image {
         width: 40%;
         height: 100%;
     }
-    
-    nav ul{
+
+    nav ul {
         display: flex;
     }
-    
+
     .content {
         width: 40%;
         margin: auto;
         height: 100%;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
+
     .contact-form {
         flex-direction: row;
-        
+
         flex-wrap: wrap;
-    
+
     }
 
     .rit-c {
@@ -739,31 +822,33 @@ footer img{
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .lef-c {
         margin: 15px auto;
         width: 40%;
         display: flex;
         justify-content: flex-end;
     }
-    
+
     .rit-c input {
         margin: 15px auto;
-        border: #eee 1px solid;
-        padding: 7px;
+        border: #42f979 1px solid;
+        background-color: #111;
+        padding: 7px 0;
         width: 100%;
     }
-    
+
     .contact textarea {
         margin: 15px auto;
-        border: #eee 1px solid;
         padding: 7px;
         width: 100%;
         height: 150px;
         resize: none;
+        border: #42f979 1px solid;
+        background-color: #111;
     }
-    
-    
+
+
     /* .contact h1 {
         text-align: center;
         margin: 50px;
@@ -774,21 +859,20 @@ footer img{
         justify-content: flex-end;
         margin: 5px auto 20px auto;
     }
-    
+
     .btn {
         width: 25%;
         height: 30px;
-        background-color: rgb(186 78 255 / 42%);
-        background: linear-gradient(to right, #c8fdd8, #42f979);
+        background-color: #42f979;
         border: black 1px solid;
         border-radius: 5px;
         margin: 0 0 0 0;
 
     }
 
-    
 
-    .s-row{
+
+    .s-row {
         width: 80%;
         height: auto;
         margin: auto;
@@ -797,8 +881,8 @@ footer img{
         flex-direction: row;
         justify-content: space-around;
     }
-    
-    .s-col{
+
+    .s-col {
         margin-top: 30px;
         width: 33.333%;
         height: 100%;
@@ -807,14 +891,13 @@ footer img{
         display: block;
     }
 
-    .s-col img{
+    .s-col img {
         width: 80%;
     }
 
-    .s-col h4{
+    .s-col h4 {
         width: auto;
     }
-    
+
 
 }
-
