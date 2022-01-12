@@ -6,7 +6,63 @@
 
 html {
     scroll-behavior: smooth;
+    background: #000
 }
+.title-word {
+    width: 100%;
+    height: 3px;
+    /* position: sticky;
+    top:0px; */
+    animation: color-animation 4s ease-in-out  infinite alternate ;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  
+  .title-word-1 {
+    --color-1: cyan;
+    --color-2: #b242f9;
+    --color-3: #e91e63;
+    --color-3: #e91e63;
+    
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    /* 0%    { background : var(--color-1); width:0%;}
+    32%   { background : var(--color-1); width: 20%;}
+    33%   { background : var(--color-2); width: 40%;}
+    65%   { background : var(--color-2); width: 60%;}
+    66%   { background : var(--color-3); width: 80%;}
+    99%   { background : var(--color-3); width: 100%;}
+    100%  { background : var(--color-1); width: 0%;} 
+    cyan;
+    --color-2: #b242f9;
+    --color-3: #e91e63;
+    --color-3: #e91e63;*/
+    
+    0% {background : #00ffff; width:0%;}
+    25% {background : #b242f9; width:20%; position: relative; right: 0;}
+    50% {background : #e91e63; width:50%; position: relative; right: 0;}
+    100% {background : #42f979; width:100%; position: relative; right: 0;}
+    
+  }
 
 .logo {
     height: inherit;
