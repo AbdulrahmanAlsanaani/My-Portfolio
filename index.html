@@ -21,7 +21,7 @@
         <div class="s-menu-border">
             <ul class="s-menu-ul">
                 <li class="close" id="close">
-                    <a href="#home" class="s-menu-x">X</a>
+                    <a class="s-menu-x" id="s-menu-x">X</a>
                 </li>
                 <li style="margin-top: 80px;">
                     <a href="#home" class="s-menu-hov">home</a>
@@ -59,7 +59,7 @@
             </li>
         </ul>
 
-        <div class="menu">
+        <div class="menu" id="menu">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
     </nav>
@@ -89,14 +89,14 @@
 
         <div class="carde">
             <div class="image">
-                <img src="./images/IMG_٢٠٢٢٠١١٠_٢٣٢٨٤٠ (2).jpg" alt="">
+                <img src="./images/Picsart_22-01-13_19-04-25-110.jpg" alt="">
             </div>
             <div class="content">
                 <p>HELLO EVERYBODY, I AM</p>
                 <h1>ABDULRAHMAN
                     <br> ALSANA'ANI
                 </h1>
-                <h3>Software Developer</h3>
+                <h3 class="jop">Software Developer</h3>
                 <p>I am software developer I am graduate from Al-ahgaff university BSc computer information system CIS. I love
                     my specialization and I hope to be full-stack developer. I am interested in technology, learn fast, good
                     in logical thinking, problem solver, and hope to be better.
@@ -290,9 +290,9 @@
             <h1 style="text-align: center; color: #eee;">0</h1>
             <div class="up-prog">
                 <div class="date">
-                    <h3>2022</h3>
-                    <h3>2021</h3>
-                    <h3>2017</h3>
+                    <h4>2022</h4>
+                    <h4>2021</h4>
+                    <h4>2017</h4>
                 </div>
                 <div class="val-up-lin">
                     <div class="dot"></div>
@@ -300,9 +300,9 @@
                     <div class="dot"></div>
                 </div>
                 <div class="event">
-                    <h3>Stadynig in rouade faundation</h3>
-                    <h3>Graduate frome Al-Ahgaff Univarcity</h3>
-                    <h3>Finshed high-school</h3>
+                    <h4>Stadynig in rouade faundation</h4>
+                    <h4>Graduate frome Al-Ahgaff Univarcity</h4>
+                    <h4>Finshed high-school</h4>
                 </div>
 
             </div>
@@ -322,27 +322,27 @@
 
             </div>
             <div class="s-row">
-                <div class="s-col">
+                <div class="s-col s-c-anm">
                     <div>
-                        <h3>Back-end Developer</h3>
+                        <h2>Back-end</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit odio veniam aperiam nemo vero
                             explicabo aliquam quis dolor, soluta impedit pariatur delectus, id, aut nesciunt corrupti quibusdam
                             qui adipisci?</p>
 
                     </div>
                 </div>
-                <div class="s-col">
+                <div class="s-col s-c-anm">
                     <div>
-                        <h3>Front-end Developer</h3>
+                        <h2>Front-end</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit odio veniam aperiam nemo vero
                             explicabo aliquam quis dolor, soluta impedit pariatur delectus, id, aut nesciunt corrupti quibusdam
                             qui adipisci?</p>
 
                     </div>
                 </div>
-                <div class="s-col">
+                <div class="s-col s-c-anm">
                     <div>
-                        <h3>UX-UI Designer</h3>
+                        <h2>UX-UI Designer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit odio veniam aperiam nemo vero
                             explicabo aliquam quis dolor, soluta impedit pariatur delectus, id, aut nesciunt corrupti quibusdam
                             qui adipisci?</p>
@@ -402,19 +402,19 @@
             <p>Conact</p>
         </div>
         <div class="contact-border">
-            <form class="contact-form" action="./index.html" method="POST" onsubmit="return reg()" id="form">
+            <form class="contact-form" action="try.html" method="POST" id="form">
                 <div class="rit-c">
                     <input type="text" id="email" placeholder="Enter your Email">
-                    <p id="email_masseg"></p>
+                    <p id="email_masseg" style="color: red;"></p>
                     <input type="text" id="phone" placeholder="Enter your Phone">
-                    <p id="phone_masseg"></p>
+                    <p id="phone_masseg" style="color: red;"></p>
                     <input type="text" id="subject" placeholder="Enter your Subject">
-                    <p id="subject_masseg"></p>
+                    <p id="subject_masseg" style="color: red;"></p>
                 </div>
                 <div class="lef-c">
                     <textarea name="massage" id="messag" cols="30" rows="1" placeholder="Enter messag"></textarea>
-                    <p id="massage_masseg"></p>
                 </div>
+                <p id="massage_masseg" style="color: red; text-align: center;"></p>
                 <div class="btn-f">
                     <input class="btn" type="submit" id="submit" value="Submit">
 
@@ -448,148 +448,20 @@
     </div>
     <!-----------------------start footer---------------------------------->
     <footer>
-        <p>Copyright &copy; 2022
-            <span style="color: orange;">A</span>bdulrahman
-            <span style="color: orange;">M</span>.
-            <span style="color: orange;">A</span>. Al-
-            <span style="color: orange;">S</span>ana'ani </p>
+        <p>
+            <span style="color: #eee;">Copyright &copy; 2022</span>
+            <span style="color: orange;">A</span><span style="color: #eee;">bdulrahman</span>
+            
+            <span style="color: orange;">M</span>
+            <span style="color: #eee;">.</span>
+            <span style="color: orange;">A</span>
+            <span style="color: #eee;">. Al-</span><span style="color: orange;">S</span><span style="color: #eee;">ana'ani </span>
+            
+            
+        </p>
         <img src="./images/PicsArt_12-30-04.25.50.png" alt="">
     </footer>
-    <script>
-        function myFunction() {
-            var element = document.getElementsByClassName("about");
-            var services = document.getElementsByClassName("services");
-            var contact = document.getElementsByClassName("contact");
-            element[0].classList.toggle("a-light");
-            services[0].classList.toggle("s-light");
-            contact[0].classList.toggle("c-light");
-            var p = document.getElementsByTagName("p");
-            var h1 = document.getElementsByTagName("h1");
-            var h2 = document.getElementsByTagName("h2");
-            var h3 = document.getElementsByTagName("h3");
-            var h4 = document.getElementsByTagName("h4");
-            var h5 = document.getElementsByTagName("h5");
-            var max_prog = document.getElementsByClassName("max-prog");
-            var moon = document.getElementById("moon1");
-            var sun = document.getElementById("sun1");
-            for (i = 0; i < p.length; i++) {
-                p[i].classList.toggle("p-light");
-                
-            }
-            for (i = 0; i < max_prog.length; i++) {
-                max_prog[i].classList.toggle("prog");
-                
-            }
-            for (i = 0; i < h1.length; i++) {
-                h1[i].classList.toggle("h1-light");
-                
-            }
-
-            for (i = 0; i < h2.length; i++) {
-                h2[i].classList.toggle("h2-light");
-                
-            }
-
-            for (i = 0; i < h3.length; i++) {
-                h3[i].classList.toggle("h3-light");
-                
-            }
-
-            for (i = 0; i < h4.length; i++) {
-                h4[i].classList.toggle("h4-light");
-                
-            }
-
-            for (i = 0; i < h5.length; i++) {
-                h5[i].classList.toggle("h5-light");
-                
-            }
-
-            
-            if (element[0].className == "about") {
-                moon.classList.remove("show");
-                moon.classList.toggle("haide");
-                sun.classList.remove("haide");
-                sun.classList.toggle("show");
-                
-
-
-
-            } else if (element[0].className != "light") {
-                sun.classList.remove("show");
-                sun.classList.toggle("haide");
-                moon.classList.remove("haide");
-                moon.classList.toggle("show");
-
-            }
-        }
-        /*  function reg() {
-             var email = document.getElementById("email").value;
-             var phone = document.getElementById("phone").value;
-             var subject = document.getElementById("subject").value;
-             var massage = document.getElementById("massage").value;
- 
- 
- 
- 
-             if (!(/\S+@\S+\.\S+$/.test(email))) {
-                 document.getElementById("email_masseg").innerHTML = "email sentacs is nout true";
-                 return false;
-             } else {
-                 document.getElementById("email_masseg").innerHTML = "";
-             }
- 
-             if (subject.value == "") {
-                 document.getElementById("subject_masseg").innerHTML = "you cant make subject empety";
-                 return false;
-             } else {
-                 document.getElementById("subject_masseg").innerHTML = "";
-             }
- 
- 
-             if (!(/^777\d{6}$/.test(phone))) {
-                 document.getElementById("phone_masseg").innerHTML = "The number most beging by 777 and most mor than 9 numbers";
-                 return false;
-             } else {
-                 document.getElementById("phone_masseg").innerHTML = "";
-             }
- 
- 
-             if (massage.length < 20) {
-                 document.getElementById("massage_masseg").innerHTML = "the massege mst have more than 20charecters";
-                 return false;
-             } else {
-                 document.getElementById("massage_masseg").innerHTML = "";
-             }
- 
- 
- 
-         } */
-
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementsByClassName('myImg');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        for (i = 0; i < img.length; i++) {
-            img[i].onclick = function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-        }
-
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close1")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
