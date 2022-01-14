@@ -63,18 +63,18 @@ function myFunction() {
 
 
     if (element[0].className == "about") {
-        sun.classList.remove("show");
-        sun.classList.toggle("haide");
-        moon.classList.remove("haide");
-        moon.classList.toggle("show");
-
-    } else if (element[0].className != "light") {
-
         moon.classList.remove("show");
         moon.classList.toggle("haide");
         sun.classList.remove("haide");
         sun.classList.toggle("show");
 
+    } else if (element[0].className != "light") {
+
+        
+        sun.classList.remove("show");
+        sun.classList.toggle("haide");
+        moon.classList.remove("haide");
+        moon.classList.toggle("show");
     }
 }
 

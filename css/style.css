@@ -236,24 +236,34 @@ ul a {
     border-bottom: solid 3px aqua;
     color: #00edf9;
 } */
-
+@keyframes nav-anim {
+    
+    0% {font-size: 20px}
+    100% {font-size: 30px; color: #00edf9;}
+    
+  }
+.home-hov, .about-hov, .services-hov, .contact-hov{
+font-size: 20px;
+transition: ease-in-out 1s;
+}
 .home-hov:hover {
-    border-bottom: solid 3px aqua;
     color: #00edf9;
+    font-size: 30px
+    /* animation: nav-anim ease-in-out 1s  ; */
 }
 
 .about-hov:hover {
-    border-bottom: solid 3px #b242f9;
+    font-size: 30px;
     color: #b242f9;
 }
 
 .services-hov:hover {
-    border-bottom: solid 3px #e91e63;
+    font-size: 30px;
     color: #e91e63;
 }
 
 .contact-hov:hover {
-    border-bottom: solid 3px #3de06e;
+    font-size: 30px;
     color: #3de06e;
 }
 
@@ -1075,7 +1085,7 @@ footer img {
 
 
 #d_l_maode{
-    background-color: rgb(153, 24, 24);
+    background-color: #43ac9d;
     border-radius: 50px;
     width: 40px;
     height: 40px;
@@ -1086,6 +1096,8 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .size{
