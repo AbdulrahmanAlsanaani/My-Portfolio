@@ -1,4 +1,6 @@
-function myFunction() {
+var d_l_maode = document.getElementById("d_l_maode");
+d_l_maode.addEventListener('click', (e) => {
+    e.preventDefault();
     var element = document.getElementsByClassName("about");
     var services = document.getElementsByClassName("services");
     var contact = document.getElementsByClassName("contact");
@@ -70,18 +72,18 @@ function myFunction() {
 
     } else if (element[0].className != "light") {
 
-        
+
         sun.classList.remove("show");
         sun.classList.toggle("haide");
         moon.classList.remove("haide");
         moon.classList.toggle("show");
     }
-}
+}, false);
 
 var form = document.getElementById("form");
 form.addEventListener('submit', (e) => {
-    
-    
+
+
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
     var subject = document.getElementById("subject").value;
@@ -91,14 +93,14 @@ form.addEventListener('submit', (e) => {
 
 
     if (!(/\S+@\S+\.\S+$/.test(email))) {
-        document.getElementById("email_masseg").innerHTML = "email sentacs is nout true";
+        document.getElementById("email_masseg").innerHTML = "Emai is not valid";
         e.preventDefault();
     } else {
         document.getElementById("email_masseg").innerHTML = "";
     }
 
     if (subject.value == "") {
-        document.getElementById("subject_masseg").innerHTML = "you cant make subject empety";
+        document.getElementById("subject_masseg").innerHTML = "You can't make subject empety";
         e.preventDefault();
     } else {
         document.getElementById("subject_masseg").innerHTML = "";
@@ -106,7 +108,7 @@ form.addEventListener('submit', (e) => {
 
 
     if (!(/^777\d{6}$/.test(phone))) {
-        document.getElementById("phone_masseg").innerHTML = "The number most beging by 777 and most mor than 9 numbers";
+        document.getElementById("phone_masseg").innerHTML = "Phone number should be 9 digits long and start with 777";
         e.preventDefault();
     } else {
         document.getElementById("phone_masseg").innerHTML = "";
@@ -120,14 +122,12 @@ form.addEventListener('submit', (e) => {
         document.getElementById("massage_masseg").innerHTML = "";
     }
 
-    
+
 }, false);
 
 
-// Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementsByClassName('myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -140,10 +140,8 @@ for (i = 0; i < img.length; i++) {
 }
 
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close1")[0];
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
 }
@@ -157,7 +155,7 @@ menu.addEventListener('click', () => {
 });
 
 s_menu_x.addEventListener('click', () => {
-    s_menu.style.right = "-5000px";
+    s_menu.style.right = "-100%";
 });
 
 s_menu.addEventListener('click', () => {
