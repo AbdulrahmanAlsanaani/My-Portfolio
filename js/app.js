@@ -99,7 +99,7 @@ form.addEventListener('submit', (e) => {
         document.getElementById("email_masseg").innerHTML = "";
     }
 
-    if (subject.value == "") {
+    if (subject.length == 0) {
         document.getElementById("subject_masseg").innerHTML = "You can't make subject empety";
         e.preventDefault();
     } else {
@@ -116,7 +116,7 @@ form.addEventListener('submit', (e) => {
 
 
     if (massage.length < 20) {
-        document.getElementById("massage_masseg").innerHTML = "the massege mst have more than 20charecters";
+        document.getElementById("massage_masseg").innerHTML = "The massege most have more than 20 charecters";
         e.preventDefault();
     } else {
         document.getElementById("massage_masseg").innerHTML = "";
