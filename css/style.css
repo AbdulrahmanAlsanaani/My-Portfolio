@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: cursive;
+    /* font-family: 'Arvo', serif;
+    font-family: 'Titillium Web', sans-serif; */
 }
 
 html {
@@ -23,6 +25,7 @@ html {
 
 
 .close{
+    cursor: pointer;
     text-align: right;
     width: 30px;
     height: 30px;
@@ -44,6 +47,7 @@ html {
 
 
 .close a{
+    cursor: pointer;
     color: #ff0059;
     font-weight: bold;
 }
@@ -53,9 +57,9 @@ html {
     width: 70%;
     margin-left: 30%;
     background-color: #000;
-    border-top: #b242f9 1px solid;
-    border-left: #b242f9 3px solid;
-    border-bottom: #b242f9 1px solid;
+    border-top: orange 1px solid;
+    border-left: orange 3px solid;
+    border-bottom: orange 1px solid;
     border-radius: 50px 0 0 50px ;
 }
 
@@ -299,6 +303,7 @@ transition: ease-in-out 1s;
     width: 100%;
     height: auto;
     z-index: 5;
+    filter: hue-rotate(270deg);
 }
 
 .content {
@@ -848,7 +853,7 @@ text-align: left;
     border: #3de06e 1px solid;
     border-radius: 5px;
     margin: 0 auto;
-
+    font-weight: bolder
 }
 
 @keyframes btn {
@@ -890,7 +895,7 @@ text-align: left;
 
 
 .facebook-hov{
-    border: #0000ff 2px solid;
+    border: #0000ff 1px solid;
     color: #0000ff;
     border-radius: 5px;
     height: 30px;
@@ -900,7 +905,7 @@ text-align: left;
 }
 
 .github-hov {
-    border: #6e06af 2px solid;
+    border: #6e06af 1px solid;
     color: #6e06af;
     border-radius: 5px;
     height: 30px;
@@ -910,7 +915,7 @@ text-align: left;
 }
 
 .linkedin-hov {
-    border: #3F51B5 2px solid;
+    border: #3F51B5 1px solid;
     color: #3F51B5;
     border-radius: 5px;
     height: 30px;
@@ -920,7 +925,7 @@ text-align: left;
 }
 
 .twitter-hov {
-    border: #00BCD4 2px solid;
+    border: #00BCD4 1px solid;
     color: #00BCD4;
     border-radius: 5px;
     height: 30px;
@@ -1067,6 +1072,10 @@ footer img {
 .input-light{
     background-color: #eee !important;
     color: #000 !important;
+}
+
+.btn-light{
+    color: #fff;
 }
 
 .p-light, .h1-light, .h2-light, .h4-light, .h5-light, i-light{
@@ -1305,7 +1314,7 @@ footer img {
         border: #3de06e 1px solid;
         border-radius: 5px;
         margin: 0 0 0 0;
-
+        font-weight: bolder;
     }
 
 

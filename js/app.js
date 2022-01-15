@@ -26,6 +26,7 @@ d_l_maode.addEventListener('click', (e) => {
         input[i].classList.toggle("input-light");
 
     }
+    input[input.length-1].classList.toggle("btn-light");
     for (i = 0; i < textarea.length; i++) {
         textarea[i].classList.toggle("input-light");
 
