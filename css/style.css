@@ -964,6 +964,15 @@ footer img {
     width: 50px;
 }
 
+.f-sosial{
+    width: 100%
+}
+
+.f-sosial ul{
+    margin: auto;
+    width: 40%;
+}
+
 /****************************************************/
 .myImg {
     border-radius: 5px;
