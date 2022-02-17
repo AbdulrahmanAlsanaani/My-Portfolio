@@ -1,0 +1,23 @@
+{
+  "name": "my-portfolio---copy---in---heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "My portifolio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdulrahmanAlsanaani/My-Portfolio.git"
+  },
+  "author": "Abdulrahman Alsanaani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdulrahmanAlsanaani/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/AbdulrahmanAlsanaani/My-Portfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
